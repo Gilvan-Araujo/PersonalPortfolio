@@ -33,7 +33,7 @@ header {
     align-items: center;
     flex: 0 1 auto;
     background-color: var(--darker-blue);
-    padding: 5px;
+    padding: 10px;
 }
 
 .logo {
@@ -51,7 +51,24 @@ section {
 
 .sidebar {
     flex: 30%;
-    padding: 20px;
+    padding: 10px;
+    background-color: var(--dark-blue);
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--light-grey);
+}
+
+.personal-photo {
+    width: 100%;
+}
+
+figcaption {
+    margin: 5px;
+    text-align: center;
+    color: var(--light-grey);
 }
 
 .main {
