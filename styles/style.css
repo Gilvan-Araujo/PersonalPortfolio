@@ -28,13 +28,20 @@ body {
 }
 
 header {
-    flex: 0 1 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
     background-color: var(--darker-blue);
+    padding: 5px;
+}
+
+.logo {
+    height: 75%;
 }
 
 section {
     flex: 1 1 auto;
-    background-color: var(--dark-blue);
 }
 
 .container {
@@ -44,18 +51,15 @@ section {
 
 .sidebar {
     flex: 30%;
-    background-color: var(--dark-blue);
     padding: 20px;
 }
 
 .main {
     flex: 70%;
-    background-color: var(--light-blue);
     padding: 20px;
 }
 
 footer {
-    background-color: var(--main-blue);
     flex: 0 1 50px;
 }
 
