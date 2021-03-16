@@ -27,6 +27,12 @@ body {
     background-color: var(--main-blue);
 }
 
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--light-grey);
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -55,12 +61,6 @@ section {
     background-color: var(--dark-blue);
 }
 
-h2 {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    color: var(--light-grey);
-}
-
 .personal-photo {
     width: 100%;
 }
@@ -72,8 +72,43 @@ figcaption {
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
     flex: 70%;
     padding: 20px;
+    background-color: var(--darker-blue);
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.app-container {
+    border-radius: 10px;
+    background-color: var(--dark-grey);
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+h3 {
+    color: var(--grey);
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.app-logo {
+    width: 150px;
 }
 
 footer {
