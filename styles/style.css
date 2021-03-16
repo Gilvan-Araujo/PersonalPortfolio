@@ -1,7 +1,8 @@
 :root {
     --light-grey: #D9D9D9;
     --grey: #808080;
-    --dark-grey: #262626;
+    --dark-grey: #4d4d4d;
+    --darker-grey: #262626;
     --darker-blue: #004080;
     --dark-blue: #0066CC;
     --main-blue: #0080FF;
@@ -24,7 +25,7 @@ body {
     flex-flow: column;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--main-blue);
+    background-color: var(--grey);
 }
 
 h1, h2, h3, h4 {
@@ -38,7 +39,7 @@ header {
     justify-content: center;
     align-items: center;
     flex: 0 1 auto;
-    background-color: var(--darker-blue);
+    background-color: var(--darker-grey);
     padding: 10px;
 }
 
@@ -56,17 +57,24 @@ section {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
     flex: 30%;
     padding: 10px;
-    background-color: var(--dark-blue);
+    background-color: var(--dark-grey);
+    border-right: solid 1px var(--light-grey);
 }
 
 .personal-photo {
-    width: 100%;
+    width: 90%;
+    border-radius: 50%;
+    margin: 10px;
 }
 
 figcaption {
-    margin: 5px;
+    margin: 10px;
     text-align: center;
     color: var(--light-grey);
 }
@@ -74,9 +82,11 @@ figcaption {
 .main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
     flex: 70%;
-    padding: 20px;
-    background-color: var(--darker-blue);
+    padding: 10px;
+    background-color: var(--dark-grey);
 }
 
 .outer-container {
@@ -90,14 +100,14 @@ figcaption {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: var(--dark-grey);
+    background-color: var(--light-grey);
     width: auto;
     padding: 10px;
     margin: 10px;
 }
 
 h3 {
-    color: var(--grey);
+    color: var(--main-blue);
     margin: 10px;
 }
 
@@ -121,7 +131,7 @@ footer {
     flex-direction: row;
     flex: 0 1 50px;
     padding: 10px;
-    background-color: var(--dark-blue);
+    background-color: var(--darker-grey);
 }
 
 h4 {
@@ -146,5 +156,8 @@ h4 {
     }
     footer {
         flex-direction: column;
+    }
+    .sidebar {
+        border-right: none;
     }
 }
