@@ -24,11 +24,13 @@ body {
     flex-flow: column;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-theme-1);
 }
 
 h1, h2, h3, h4 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    color: var(--white);
 }
 
 header {
@@ -37,6 +39,7 @@ header {
     align-items: center;
     flex: 0 1 auto;
     padding: 10px;
+    background-color: var(--dark-theme-1);
 }
 
 .logo {
@@ -45,6 +48,7 @@ header {
 
 section {
     flex: 1 1 auto;
+    background-color: var(--dark-theme-2);
 }
 
 .container {
@@ -59,11 +63,15 @@ section {
     justify-content: baseline;
     flex: 30%;
     padding: 10px;
-    border-right: solid 1px;
+    border-right: solid 1px var(--light-grey);
+}
+
+h2 {
+    margin: 10px;
 }
 
 .personal-photo {
-    width: 90%;
+    width: 80%;
     border-radius: 50%;
     margin: 10px;
 }
@@ -71,6 +79,7 @@ section {
 figcaption {
     margin: 10px;
     text-align: center;
+    color: var(--white);
 }
 
 .main {
@@ -84,6 +93,8 @@ figcaption {
 
 .outer-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -96,6 +107,7 @@ figcaption {
     width: auto;
     padding: 10px;
     margin: 10px;
+    background-color: var(--dark-theme-3);
 }
 
 h3 {
@@ -122,6 +134,7 @@ footer {
     flex-direction: row;
     flex: 0 1 50px;
     padding: 10px;
+    background-color: var(--dark-theme-1);
 }
 
 h4 {
@@ -149,5 +162,6 @@ h4 {
     }
     .sidebar {
         border-right: none;
+        border-bottom: solid 1px var(--light-grey);
     }
 }
