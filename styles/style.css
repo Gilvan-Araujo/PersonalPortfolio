@@ -4,6 +4,9 @@
     --grey: #808080;
     --dark-grey: #404040;
     --black: #000000;
+    --light-theme-1: #CADEEF;
+    --light-theme-2: #9BD4E4;
+    --light-theme-3: #39ACE7;
     --main-blue: #0784B5;
     --dark-theme-3: #414C50;
     --dark-theme-2: #2D383C;
@@ -63,7 +66,7 @@ section {
     justify-content: baseline;
     flex: 30%;
     padding: 10px;
-    border-right: solid 1px var(--light-grey);
+    border-right: solid 1px var(--grey);
 }
 
 h2 {
@@ -142,7 +145,7 @@ h4 {
 }
 
 .social-container {
-    margin-left: 50px;
+    margin: 0px 50px;
 }
 
 .social-img {
@@ -150,18 +153,47 @@ h4 {
     margin: 10px;
 }
 
+.light-mode-button {
+    background-color: var(--dark-theme-3);
+    color: var(--white);
+    border: var(--black);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.light-mode-header-footer {
+    background-color: var(--light-theme-3);
+}
+
+.light-mode-main-sidebar {
+    background-color: var(--light-theme-2);
+}
+
+.light-mode-headers {
+    color: var(--black);
+}
+
+.light-mode-button-app-container {
+    background-color: var(--light-theme-1);
+}
+
+.filter-black {
+    filter: brightness(0%);
+}
+
 @media screen and (max-width: 700px) {
     .container {
         flex-direction: column;
     }
     .social-container {
-        margin-left: 0px;
+        margin: 0px;
     }
     footer {
         flex-direction: column;
     }
     .sidebar {
         border-right: none;
-        border-bottom: solid 1px var(--light-grey);
+        border-bottom: solid 1px var(--grey);
     }
 }
