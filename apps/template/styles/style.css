@@ -62,9 +62,6 @@ header {
 section {
     flex: 1 1 auto;
     background-color: var(--dark-theme-2);
-}
-
-.container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -156,7 +153,7 @@ h4 {
 }
 
 @media screen and (max-width: 700px) {
-    .container {
+    section {
         flex-direction: column-reverse;
     }
     .social-container {
