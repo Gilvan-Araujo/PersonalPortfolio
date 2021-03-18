@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 
-    <title>Gilvan Araújo</title>
+    <title>Binary Converter</title>
 </head>
 
 <body>
@@ -32,17 +32,31 @@
     </header>
     <section>
         <div class="sidebar">
-            <h2>About the app</h2>
+            <h2>About the App</h2>
+            <p>According to digital electronics and mathematics, a binary number is defined as a
+                number that is expressed in the binary system or base 2 numeral system. It describes numeric values by
+                two separate symbols; 1 (one) and 0 (zero). The base-2 system is the positional notation with 2 as a
+                radix.
+            </p>
+            <p>The binary system is applied internally by almost all latest computers and computer-based devices because
+                of its direct implementation in electronic circuits using logic gates. Every digit is referred to as a
+                bit. </p>
+            <p>This application's purpose is to convert, in real time, any binary number to its decimal equivalent.</p>
         </div>
         <div class="main">
-            <h2>Application Area</h2>
+            <h2>Binary Converter</h2>
+            <input type="number" name="binary" class="text-field" oninput="convert()" id="binary" placeholder="Binary"
+                value="0">
+            <p id="answer">
+                Decimal: 0
+            </p>
         </div>
     </section>
     <footer>
         <div>
             <h4>Gilvan Araújo</h4>
         </div>
-        <div class="social-container">
+        <div class=" social-container">
             <a href="https://github.com/Gilvan-Araujo" target="_blank">
                 <img src="./images/github.svg" alt="Github link" class="social-img svg">
             </a>
@@ -54,7 +68,7 @@
             </a>
         </div>
         <div>
-            <button class="light-mode-button" onclick="toggleVisualMode()">☀️</button>
+            <button class="visual-mode-button" onclick="toggleVisualMode()">☀️</button>
         </div>
     </footer>
     <script src="./scripts/script.js"></script>

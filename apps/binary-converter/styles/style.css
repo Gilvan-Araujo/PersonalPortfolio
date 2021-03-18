@@ -96,6 +96,19 @@ p {
     padding: 10px;
 }
 
+.text-field {
+    width: 75%;
+    text-align: center;
+    margin: 10px;
+    border-radius: 0px;
+    padding: 5px;
+    border: solid var(--black) 1px;
+}
+
+.main>p {
+    text-indent: 0px;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -123,7 +136,7 @@ h4 {
     margin: 10px;
 }
 
-.light-mode-button {
+.visual-mode-button {
     background-color: var(--dark-theme-3);
     color: var(--white);
     border: var(--black);
