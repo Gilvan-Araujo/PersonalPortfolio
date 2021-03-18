@@ -16,7 +16,7 @@ function toggleVisualMode() {
     main.classList.toggle('light-mode-main-sidebar');
     sidebar.classList.toggle('light-mode-main-sidebar');
 
-    var headers = document.querySelectorAll('h1, h2, h3, h4, figcaption');
+    var headers = document.querySelectorAll('h1, h2, h3, h4, p');
     for (var i = 0; i < headers.length; i++) {
         headers[i].classList.toggle('light-mode-headers')
     }

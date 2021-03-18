@@ -36,6 +36,10 @@ h1, h2, h3, h4 {
     color: var(--white);
 }
 
+h2 {
+    margin: 10px;
+}
+
 header {
     display: flex;
     position: relative;
@@ -46,7 +50,7 @@ header {
     background-color: var(--dark-theme-1);
 }
 
-.back-button{
+.back-button {
     position: absolute;
     left: 10px;
 }
@@ -75,20 +79,15 @@ section {
     border-right: solid 1px var(--grey);
 }
 
-h2 {
-    margin: 10px;
+.sidebar>h2 {
+    margin-bottom: 20px;
 }
 
-.personal-photo {
-    width: 80%;
-    border-radius: 50%;
+p {
     margin: 10px;
-}
-
-figcaption {
-    margin: 10px;
-    text-align: center;
     color: var(--white);
+    text-indent: 4em;
+    text-align: justify;
 }
 
 .main {
