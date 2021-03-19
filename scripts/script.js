@@ -1,5 +1,5 @@
 function toggleVisualMode() {
-    var button = document.querySelector('button.light-mode-button')
+    var button = document.querySelector('button.visual-mode-button')
     if (button.innerHTML == '☀️') {
         button.innerHTML = '🌑'
     } else {
