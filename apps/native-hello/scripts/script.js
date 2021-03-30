@@ -68,7 +68,7 @@ async function fillHello() {
                     fetchHello(json)
                         .then((json) => {
                             let p = document.getElementById('greetings')
-                            p.innerHTML += `${json['hello']}, ${user.value}! You have successfully logged in!<br>`
+                            p.innerHTML += `${json['hello']}, ${user.value}! <br> You have successfully logged in!<br>`
                         })
                 })
         } else {
@@ -77,14 +77,14 @@ async function fillHello() {
                     fetchHelloUser(json, language.value)
                         .then((json) => {
                             let p = document.getElementById('greetings')
-                            p.innerHTML += `${json['hello']}, ${user.value}! You have successfully logged in!<br>`
+                            p.innerHTML += `${json['hello']}, ${user.value}! <br> You have successfully logged in!<br>`
                         })
                 })
         }
     }
 }
 
-function fillInfo(paragraph) {
+async function fillInfo(paragraph) {
     fetchIp()
         .then((json) => {
             paragraph.innerHTML += `<br>Extra informations`
