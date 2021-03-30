@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.inferior {
+    flex-direction: row;
+}
+
+.user-input {
+    font-size: 15px;
+    margin: 5px;
+    border: solid 1.5px black;
+    width: 200px;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#greetings {
+    text-align: center;
+}
+
+.language {
+    width: 100px;
+}
+
+.button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: var(--black);
+}
+
+.container>p {
+    text-indent: 0;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+}
