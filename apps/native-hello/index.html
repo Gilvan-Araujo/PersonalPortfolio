@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <link rel="icon" href="favicon.svg">
     <link rel="mask-icon" href="mask-icon.svg" color="#000000">
@@ -19,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 
-    <title>Gilvan Araújo</title>
+    <title>Native Hello</title>
 </head>
 
 <body>
@@ -33,9 +34,42 @@
     <section>
         <div class="sidebar">
             <h2>About the app</h2>
+            <p>
+                It is a given that applications must provide users with the functionality necessary to accomplish some
+                task or goal. The effectiveness of app functionality is the first determinate of how users perceive the
+                apps they use. However, it is not the only thing that influences user satisfaction.
+            </p>
+            <p>
+                The User Interface and User Experience (UI/UX) features developers build into apps have at least an
+                equal amount of influence on users perception of an app. It may be an oversimplification, but UI/UX is
+                largely (but not wholly) concerned with an apps "form".
+                Personalization is an aspect of UX that tailors characteristics and actions to the individual user.
+                Personalizing app functionality in this manner works to make the app easier and more pleasing to use.
+            </p>
+            <p>
+                The objective of the Hello app is to leverage geolocation to obtain the users country so it can then
+                generate a customized greeting in the users native language. Users can also input a custom country code
+                in the language bar below the password field and see the hello in a specific language. They can also see
+                additional geolocation information after logging on that includes at least the local IP address, city,
+                region, country name, zip code, longitude, latitude, and timezone.
+            </p>
         </div>
         <div class="main">
-            <h2>Application Area</h2>
+            <h2>Native Hello</h2>
+            <div class="container">
+                <input type="text" name="user" id="user" class="user-input" oninput="darkenBorder(this)"
+                    placeholder="User">
+                <input type="password" name="password" id="password" class="user-input" oninput="darkenBorder(this)"
+                    placeholder="Password">
+                <input type="text" name="language" id="language" placeholder="Language" class="user-input language">
+            </div>
+            <div class="container inferior">
+                <input type="button" value="Login" class="button" onclick="login(document.getElementById('greetings'))">
+                <input type="button" value="Logout" class="button" onclick='logout()'>
+            </div>
+            <div class="container">
+                <p id="greetings"></p>
+            </div>
         </div>
     </section>
     <footer>
@@ -58,6 +92,7 @@
         </div>
     </footer>
     <script src="../../scripts/global.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

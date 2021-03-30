@@ -108,12 +108,14 @@ function logout() {
     var user = document.getElementById('user')
     var password = document.getElementById('password')
     var paragraph = document.getElementById('greetings')
+    var languageField = document.getElementById('language')
 
     if (user.value !== '' && password.value !== '') {
         alert(`Have a great day, ${user.value}`)
 
         user.value = ''
         password.value = ''
+        languageField.value = ''
         paragraph.innerHTML = ''
     }
 }
