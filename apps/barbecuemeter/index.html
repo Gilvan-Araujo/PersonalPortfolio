@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <link rel="icon" href="favicon.svg">
     <link rel="mask-icon" href="mask-icon.svg" color="#000000">
@@ -33,9 +34,25 @@
     <section>
         <div class="sidebar">
             <h2>About the app</h2>
+            <p>Anyone that has ever tried hosting a barbecue, knows that you seem to never find that sweet spot; either
+                you always fall short on the meat and drinks, or you purchase to much and it goes to waste.
+            </p>
+            <p>Thinking about that, this app was developed with a formula in mind, which takes into consideration the
+                number of adults, children and the duration of the barbecue in hours, and returns an estimate kilograms
+                of meat, liters of beer and liters of other drinks, such as soda or water, for the kids.
+            </p>
         </div>
         <div class="main">
-            <h2>Application Area</h2>
+            <h2>Barbecuemeter</h2>
+            <div id="userInput">
+                <input type="number" name="adults" id="adults" placeholder="Adults">
+                <input type="number" name="chidren" id="children" placeholder="Children">
+                <input type="number" name="duration" id="duration" placeholder="Duration (h)">
+                <input type="button" value="Calculate" class="button" onclick=calculate()>
+            </div>
+            <div id="result">
+
+            </div>
         </div>
     </section>
     <footer>
@@ -57,6 +74,7 @@
             <button class="visual-mode-button" onclick="toggleVisualMode()">☀️</button>
         </div>
     </footer>
+    <script src="./scripts/script.js"></script>
     <script src="../../scripts/global.js"></script>
 </body>
 
