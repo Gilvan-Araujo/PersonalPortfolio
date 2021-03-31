@@ -1,5 +1,3 @@
-/* Elements */
-
 input {
     font-size: 12pt;
     margin: 15px;
@@ -8,8 +6,6 @@ input {
     text-align: center;
 }
 
-/* IDs */
-
 #userInput {
     display: flex;
     flex-direction: column;
@@ -17,12 +13,15 @@ input {
     align-items: center;
 }
 
+.button {
+    width: 50%;
+}
+
 #result {
     padding: 15px;
 }
 
-/* Classes */
-
-.button {
-    width: 50%;
+#result>p {
+    text-align: center;
+    text-indent: 0;
 }
