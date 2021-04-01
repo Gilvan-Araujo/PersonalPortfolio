@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <link rel="icon" href="favicon.svg">
     <link rel="mask-icon" href="mask-icon.svg" color="#000000">
@@ -33,9 +34,39 @@
     <section>
         <div class="sidebar">
             <h2>About the app</h2>
+            <p>Tic-tac-toe (American English), noughts and crosses (Commonwealth English and British English), or Xs and
+                Os/“X’y O’sies” (Ireland), is a paper-and-pencil game for two players, X and O, who take turns marking
+                the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal,
+                horizontal, or vertical row is the winner. It is a solved game with a forced draw assuming best play
+                from both players.
+            </p>
+            <p>
+                In this variation of the classic game, the X's are replaced with crossed swords, and O's with shields,
+                giving a bit of a medieval tone for the whole game. Have fun!
+            </p>
         </div>
         <div class="main">
-            <h2>Application Area</h2>
+            <h2>Tic Tac Toe</h2>
+            <div class="stage">
+                <div>
+                    <div id="0" class="square"></div>
+                    <div id="1" class="square"></div>
+                    <div id="2" class="square"></div>
+                </div>
+                <div>
+                    <div id="3" class="square"></div>
+                    <div id="4" class="square"></div>
+                    <div id="5" class="square"></div>
+                </div>
+                <div>
+                    <div id="6" class="square"></div>
+                    <div id="7" class="square"></div>
+                    <div id="8" class="square"></div>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Reset Game" class="button" onclick="resetGame()">
+            </div>
         </div>
     </section>
     <footer>
@@ -58,6 +89,8 @@
         </div>
     </footer>
     <script src="../../scripts/global.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/interface.js"></script>
 </body>
 
 </html>
