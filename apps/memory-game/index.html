@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <link rel="icon" href="favicon.svg">
     <link rel="mask-icon" href="mask-icon.svg" color="#000000">
@@ -19,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 
-    <title>Gilvan Araújo</title>
+    <title>Memory Game</title>
 </head>
 
 <body>
@@ -33,9 +34,24 @@
     <section>
         <div class="sidebar">
             <h2>About the app</h2>
+            <p>
+                A simple memory game, developed throughout an online course on Full Stack Web Development, that contains
+                all technologies that were taught in it.
+            </p>
+            <p>
+                The technologies included as cards in this memory game are: HTML, CSS, JavaScript, Firebase, jQuery,
+                Bootstrap, Node.js, MongoDB, ReactJS and Electron.
+            </p>
         </div>
         <div class="main">
-            <h2>Application Area</h2>
+            <h2>Memory Game</h2>
+            <div id="gameBoard"></div>
+        </div>
+        <div id="game-over">
+            <div>
+                Congratulations, you completed the game!
+            </div>
+            <button id="restart" onclick="restart()">Play again.</button>
         </div>
     </section>
     <footer>
@@ -58,6 +74,8 @@
         </div>
     </footer>
     <script src="../../scripts/global.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
