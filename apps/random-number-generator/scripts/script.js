@@ -50,6 +50,8 @@ function generateRandomNumber() {
     if (validateFields()) {
         let range1 = document.getElementById('range1').value;
         let range2 = document.getElementById('range2').value;
-        console.log(randomNumber(range1, range2).toFixed(2));
+        let number = randomNumber(range1, range2).toFixed(2);
+        let answer = document.getElementById('answer');
+        answer.innerHTML = number;
     }
 }
