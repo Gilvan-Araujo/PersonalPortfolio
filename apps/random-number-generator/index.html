@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <link rel="icon" href="favicon.svg">
     <link rel="mask-icon" href="mask-icon.svg" color="#000000">
@@ -33,9 +34,23 @@
     <section>
         <div class="sidebar">
             <h2>About the app</h2>
+            <p>
+                This app generates a random number between a range of two numbers. The numbers that serve as ranges are
+                limited to the subset of integers, so no decimals; however, the result is contained in the rational
+                subset, meaning it has up to the second decimal number.
+            </p>
+            <p>
+                The generator allows the user to use the random property for purposes like games that contains some kind
+                of
+                lottery or for statistics.
+            </p>
         </div>
         <div class="main">
-            <h2>Application Area</h2>
+            <h2>Random Number Generator</h2>
+            <input id="range1" placeholder="First Range" maxlength="10">
+            <input id="range2" placeholder="Second Range" maxlength="10">
+            <input id="generate" type="button" value="Generate" onclick="generateRandomNumber()">
+            <p id="answer"></p>
         </div>
     </section>
     <footer>
@@ -58,6 +73,7 @@
         </div>
     </footer>
     <script src="../../scripts/global.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
