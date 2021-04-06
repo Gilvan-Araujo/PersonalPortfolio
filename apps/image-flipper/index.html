@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <link rel="icon" href="favicon.svg">
     <link rel="mask-icon" href="mask-icon.svg" color="#000000">
@@ -19,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 
-    <title>Gilvan Araújo</title>
+    <title>Image Flipper</title>
 </head>
 
 <body>
@@ -33,9 +34,66 @@
     <section>
         <div class="sidebar">
             <h2>About the app</h2>
+            <p>
+                It's important for Web Developers to understand the basics of manipulating images since rich web
+                applications rely on images to add value to the user interface and user experience (UI/UX).
+            </p>
+
+            <p>
+                This Image Flipper explores one aspect of image manipulation - image rotation. This app displays a square pane
+                containing a single image presented in a 2x2 matrix. Using a set of up, down, left, and right arrows
+                adjacent to each of the images the user may flip them vertically or horizontally.
+            </p>
+            <p>
+                You can change the default image by entering the URL of a different image in an input field and clicking display. Note: this app wasn't designed for mobile first, so it's better suited for desktops.
+            </p>
         </div>
         <div class="main">
-            <h2>Application Area</h2>
+            <h2>Image Flipper</h2>
+            <div class="images-container">
+                <div class="outer-container">
+                    <div class="button-container">
+                        <input type="button" class="img-rotate" value="&uarr;" onclick="rotateImageOnRight(this, 0)">
+                        <input type="button" class="img-rotate" value="&rarr;" onclick="rotateImageOnRight(this, 90)">
+                        <input type="button" class="img-rotate" value="&darr;" onclick="rotateImageOnRight(this, 180)">
+                        <input type="button" class="img-rotate" value="&larr;" onclick="rotateImageOnRight(this, 270)">
+                    </div>
+                    <img src="./images/m104-sombrero.jpeg" class="rotate">
+                </div>
+                <div class="outer-container">
+                    <img src="./images/m104-sombrero.jpeg" class="rotate">
+                    <div class="button-container">
+                        <input type="button" class="img-rotate" value="&uarr;" onclick="rotateImageOnLeft(this, 0)">
+                        <input type="button" class="img-rotate" value="&rarr;" onclick="rotateImageOnLeft(this, 90)">
+                        <input type="button" class="img-rotate" value="&darr;" onclick="rotateImageOnLeft(this, 180)">
+                        <input type="button" class="img-rotate" value="&larr;" onclick="rotateImageOnLeft(this, 270)">
+                    </div>
+                </div>
+                <div class="outer-container">
+                    <div class="button-container">
+                        <input type="button" class="img-rotate" value="&uarr;" onclick="rotateImageOnRight(this, 0)">
+                        <input type="button" class="img-rotate" value="&rarr;" onclick="rotateImageOnRight(this, 90)">
+                        <input type="button" class="img-rotate" value="&darr;" onclick="rotateImageOnRight(this, 180)">
+                        <input type="button" class="img-rotate" value="&larr;" onclick="rotateImageOnRight(this, 270)">
+                    </div>
+                    <img src="./images/m104-sombrero.jpeg" class="rotate">
+                </div>
+                <div class="outer-container">
+                    <img src="./images/m104-sombrero.jpeg" class="rotate">
+                    <div class="button-container">
+                        <input type="button" class="img-rotate" value="&uarr;" onclick="rotateImageOnLeft(this, 0)">
+                        <input type="button" class="img-rotate" value="&rarr;" onclick="rotateImageOnLeft(this, 90)">
+                        <input type="button" class="img-rotate" value="&darr;" onclick="rotateImageOnLeft(this, 180)">
+                        <input type="button" class="img-rotate" value="&larr;" onclick="rotateImageOnLeft(this, 270)">
+                    </div>
+                </div>
+            </div>
+            <div class="user-input">
+                <p class="url-text">Custom URL:</p>
+                <input type="text" id="url-input" class="url-input">
+                <input type="button" name="Display" id="display" class="display-input" value="Display"
+                    onclick="changeImages()">
+            </div>
         </div>
     </section>
     <footer>
@@ -58,6 +116,7 @@
         </div>
     </footer>
     <script src="../../scripts/global.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
