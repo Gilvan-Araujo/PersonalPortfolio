@@ -1,0 +1,63 @@
+input[type=button] {
+    margin: 5px;
+}
+
+img.rotate {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.url-text {
+    text-indent: 0;
+}
+
+.images-container {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 15px;
+    margin: 10px;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.rotate {
+    transition: transform 0.5s ease-in;
+}
+
+.user-input {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.url-input {
+    width: 80%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.img-rotate {
+    width: 30px;
+    height: 30px;
+}
+
+.display-input {
+    width: 20%;
+    font-weight: bold;
+    padding: 5px;
+}
