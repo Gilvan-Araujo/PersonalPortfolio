@@ -1,4 +1,6 @@
-import { Box, Heading, Image, VStack } from '@chakra-ui/react';
+import { FaGithub, FaLinkedinIn, FaRegEnvelope } from 'react-icons/fa';
+
+import { Box, Heading, HStack, Icon, Image, VStack } from '@chakra-ui/react';
 
 export function Header() {
     return (
@@ -21,7 +23,18 @@ export function Header() {
             </Box>
             <Heading>
                 Personal Portfolio
-        </Heading>
+            </Heading>
+            <HStack spacing={5}>
+                <a href="mailto:gilvanjunior@protonmail.com">
+                    <Icon as={FaRegEnvelope} w={6} h={6} />
+                </a>
+                <a href="http://github.com/gilvan-araujo">
+                    <Icon as={FaGithub} w={6} h={6} />
+                </a>
+                <a href="https://www.linkedin.com/in/gilvan-araujo-jr/">
+                    <Icon as={FaLinkedinIn} w={6} h={6} />
+                </a>
+            </HStack>
         </VStack>
     )
 }
