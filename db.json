@@ -1,0 +1,32 @@
+{
+    "apps": [
+        {
+            "id": 1,
+            "name": "MoveIt",
+            "description": "Aplicativo desenvolvido na quarta edição da Next Level Week da Rocketseat. Tem o propósito de evitar problemas físicos ou oculares que possam decorrer de ficar sentado por muito tempo.",
+            "image": "/moveit.jpg",
+            "link": "https://moveit-gray.vercel.app/"
+        },
+        {
+            "id": 2,
+            "name": "Podcastr",
+            "description": "Aplicativo desenvolvido na quinta edição da Next Level Week da Rocketseat. Tem o intuito de ser um hub para escutar os episódios do podcast FalaDev, da Rocketseat.",
+            "image": "/podcastr.jpg",
+            "link": "https://podcastr-next-chi.vercel.app/"
+        },
+        {
+            "id": 3,
+            "name": "ToDo",
+            "description": "Aplicativo desenvolvido como desafio principal do Chapter I do Ignite da Rocketseat. Serve como um simples bloco de notas, onde é possível adicionar, remover ou marcar as mesmas como concluídas.",
+            "image": "/todo.jpg",
+            "link": "https://task-list-next.vercel.app/"
+        },
+        {
+            "id": 4,
+            "name": "GoRestaurant",
+            "description": "Aplicativo desenvolvido como desafio complementar do Chapter III do Ignite da Rocketseat. Desempenha o papel de um menu de restaurante, sendo possível adicionar, remover ou editar os pratos presentes, baseados em uma API REST.",
+            "image": "/gorestaurant.jpg",
+            "link": "https://go-restaurant-react.vercel.app/"
+        }
+    ]
+}
