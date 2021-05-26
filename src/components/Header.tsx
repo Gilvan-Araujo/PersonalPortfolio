@@ -19,20 +19,31 @@ export function Header() {
                     alt="Profile photo"
                     borderRadius="full"
                     fallbackSrc="https://via.placeholder.com/240"
+                    width="15rem"
+                    height="15rem"
                 />
             </Box>
-            <Heading>
+            <Heading py={2}>
                 Personal Portfolio
             </Heading>
-            <HStack spacing={5}>
+            <HStack spacing={10}>
                 <a href="mailto:gilvanjunior@protonmail.com">
-                    <Icon as={FaRegEnvelope} w={6} h={6} />
+                    <VStack>
+                        <Icon as={FaRegEnvelope} w={6} h={6} />
+                        <span>E-mail</span>
+                    </VStack>
                 </a>
                 <a href="http://github.com/gilvan-araujo">
-                    <Icon as={FaGithub} w={6} h={6} />
+                    <VStack>
+                        <Icon as={FaGithub} w={6} h={6} />
+                        <span>Github</span>
+                    </VStack>
                 </a>
                 <a href="https://www.linkedin.com/in/gilvan-araujo-jr/">
-                    <Icon as={FaLinkedinIn} w={6} h={6} />
+                    <VStack>
+                        <Icon as={FaLinkedinIn} w={6} h={6} />
+                        <span>Linkedin</span>
+                    </VStack>
                 </a>
             </HStack>
         </VStack>

@@ -13,7 +13,7 @@ type AppCardProps = {
 export function AppCard({ name, description, image, link }: AppCardProps) {
     return (
         <Link href={link}>
-            <a target="_blank">
+            <a target="_blank" rel="noreferee">
                 <Center py={6}>
                     <Box
                         maxW={'320px'}
@@ -34,6 +34,7 @@ export function AppCard({ name, description, image, link }: AppCardProps) {
                         >
                             <Image
                                 src={image}
+                                alt={name}
                                 layout={'fill'}
                                 objectFit={'cover'}
                             />
@@ -48,12 +49,15 @@ export function AppCard({ name, description, image, link }: AppCardProps) {
                                 {name}
                             </Text> */}
                             <Heading
-                                color={useColorModeValue('gray.100', 'gray.700')}
+                                color={useColorModeValue('gray.50', 'gray.800')}
                                 fontSize={'2xl'}
                             >
                                 {name}
                             </Heading>
-                            <Text color={'gray.500'} textAlign="justify">
+                            <Text
+                                color={useColorModeValue('gray.200', 'gray.800')}
+                                textAlign="justify"
+                            >
                                 {description}
                             </Text>
                         </Stack>

@@ -10,17 +10,17 @@ export default class MyDocument extends Document {
 
                     <meta charSet='utf-8' />
                     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-                    <meta name='description' content='Personal Portfolio from Front End Developer Gilvan Araújo' />
-                    <meta name='keywords' content='Keywords' />
+                    <meta name='description' content='Personal Portfolio with Front End Projects by Gilvan Araújo' />
+                    <meta name='keywords' content='Front-end developer portfolio' />
 
                     <link rel="manifest" href="/manifest.json" />
                     <link rel="mask-icon" href="mask-icon.svg" color="#000000" />
                     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-                    
+
                     <meta name="theme-color" content="#317EFB" />
 
                     <link rel="icon" href="favicon.svg" />
-
+                    <link rel="canonical" href="https://gilvanaraujo.dev/" />
                 </Head>
                 <body>
                     <Main />
