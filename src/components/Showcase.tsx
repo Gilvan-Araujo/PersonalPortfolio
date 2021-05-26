@@ -4,6 +4,7 @@ import { api } from "../services/api"
 import { AppCard } from "./AppCard"
 
 type App = {
+    id: string,
     name: string,
     description: string
     image: string,
@@ -26,6 +27,7 @@ export function Showcase() {
                     description={app.description}
                     image={app.image}
                     link={app.link}
+                    key={app.id}
                 />
             ))}
         </SimpleGrid>

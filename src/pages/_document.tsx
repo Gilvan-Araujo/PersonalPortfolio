@@ -8,7 +8,19 @@ export default class MyDocument extends Document {
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 
-                    <script dangerouslySetInnerHTML={{ __html: `https://www.pagelr.com/Scripts/pglr-autoimg.js` }} />
+                    <meta charSet='utf-8' />
+                    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+                    <meta name='description' content='Personal Portfolio from Front End Developer Gilvan Araújo' />
+                    <meta name='keywords' content='Keywords' />
+
+                    <link rel="manifest" href="/manifest.json" />
+                    <link rel="mask-icon" href="mask-icon.svg" color="#000000" />
+                    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+                    
+                    <meta name="theme-color" content="#317EFB" />
+
+                    <link rel="icon" href="favicon.svg" />
+
                 </Head>
                 <body>
                     <Main />

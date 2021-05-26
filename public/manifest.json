@@ -1,0 +1,16 @@
+{
+  "name": "Gilvan Araújo's Personal Portfolio",
+  "short_name": "Gilvan's Portfolio",
+  "theme_color": "#3182CE",
+  "background_color": "#3182CE",
+  "display": "fullScreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "google-touch-icon.png",
+      "sizes": "512x512"
+    }
+  ]
+}
