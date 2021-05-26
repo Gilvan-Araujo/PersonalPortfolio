@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
-import { Avatar, Box, Center, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Center, Heading, Image, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 
 type AppCardProps = {
     name: string,
@@ -13,7 +12,7 @@ type AppCardProps = {
 export function AppCard({ name, description, image, link }: AppCardProps) {
     return (
         <Link href={link}>
-            <a target="_blank" rel="noreferee">
+            <a target="_blank" rel="noreferrer">
                 <Center py={6}>
                     <Box
                         maxW={'320px'}
@@ -35,6 +34,7 @@ export function AppCard({ name, description, image, link }: AppCardProps) {
                             <Image
                                 src={image}
                                 alt={name}
+                                fallbackSrc="https://via.placeholder.com/320"
                                 layout={'fill'}
                                 objectFit={'cover'}
                             />
