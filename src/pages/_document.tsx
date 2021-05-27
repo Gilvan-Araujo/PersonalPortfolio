@@ -9,7 +9,6 @@ export default class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 
                     <meta charSet='utf-8' />
-                    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
                     <meta name='description' content='Personal Portfolio with Front End Projects by Gilvan Araújo' />
                     <meta name='keywords' content='Front-end developer portfolio' />
 
