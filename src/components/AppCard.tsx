@@ -37,6 +37,8 @@ export function AppCard({ name, description, image, link }: AppCardProps) {
                                 fallbackSrc="https://via.placeholder.com/320"
                                 layout={'fill'}
                                 objectFit={'cover'}
+                                w="20rem"
+                                h="11.25rem"
                             />
                         </Box>
                         <Stack>

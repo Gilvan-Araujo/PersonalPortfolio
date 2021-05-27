@@ -19,8 +19,8 @@ export function Header() {
                     alt="Profile photo"
                     borderRadius="full"
                     fallbackSrc="https://via.placeholder.com/240"
-                    width="15rem"
-                    height="15rem"
+                    w="15rem"
+                    h="15rem"
                 />
             </Box>
             <Heading py={2}>
